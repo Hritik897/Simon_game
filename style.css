@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin : 0;
+    padding : 0;
+    background-color: #011f3f;
+    width : 100vw;
+    height : 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.heading {
+    width : 100%;
+    height : fit-content;
+}
+
+h1,h2 {
+    font-family: 'Press Start 2P', cursive;
+    color : #fef2bf;
+    text-align: center;
+    margin: 2.5rem;
+    line-height: 1.5;
+}
+
+h1 {font-size: 4rem;}
+h2 {font-size: 2rem;}
+
+.game {
+    margin-top: 5rem;
+    padding : 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    width : fit-content;
+}
+
+button {
+    width : 12rem;
+    height : 12rem;
+    border : 0.25rem solid black;
+    border-radius: 1rem;
+    margin : 1.5rem;
+}
+.green {background-color: green;}
+.red {background-color: red;}
+.yellow {background-color: yellow;}
+.blue {background-color: blue;}
+
+.flash {
+    background-color: #fff;
+}
+
+@media(max-width : 730px) {
+    .shrink {
+        transform: scale(0.9);
+    }
+
+    button {
+        margin : 0.75rem;
+    }
+
+    .game {
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width : 475px) {
+    .shrink-head{
+        transform: scale(0.75);
+        margin: 0;
+    }
+
+    button {
+        margin : 0.1rem;
+        width : 10rem;
+        height : 10rem;
+    }
+
+    .game {
+        margin-top: 0.5rem;
+    }
+}
